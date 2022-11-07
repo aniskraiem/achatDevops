@@ -107,14 +107,19 @@
 			</plugin>
 		</plugins>
 	</build>
-<distributionManagement>
-<snapshotRepository>
-<id>deploymentRepo</id>
-<url>http://192.168.1.109:8081/repository/maven-snapshots/</url>
-</snapshotRepository>
-<repository>
-<id>deploymentRepo</id>
-<url>http://192.168.1.109:8081/repository/maven-releases/</url>
-</repository>
-</distributionManagement>
+	<distributionManagement>
+		<repository>
+			<id>my-releases</id>
+			<name>my-releases</name>
+			<url>http://192.168.1.109:8081/repository/maven-releases/</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>my-snapshots</id>
+			<name>my-snapshots</name>
+			<url>http://192.168.1.109:8081/repository/maven-snapshots/</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
