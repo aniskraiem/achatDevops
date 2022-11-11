@@ -17,7 +17,7 @@ services:
     image: kranis/achat:latest
     restart: on-failure
     ports:
-      - 8089:8089
+      - 8091:8091
     volumes:
       - .m2:/root/.m2
     stdin_open: true
